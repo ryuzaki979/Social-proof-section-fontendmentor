@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*global*/
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section{
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+.container{
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.top{
+    justify-content: space-between;
+}
+.top-left h1{
+    font-size: 3rem;
+    color: #511f50;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    letter-spacing: -3px;
+}
+.top-left p{
+    color:#511f5073;
+    line-height: 1.75rem;
+}
+/*rating*/
+.rating{
+    background: #f7f2f8;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    margin: .5rem;
+}
+.rating-two{
+    margin-left: 2rem;
+}
+.rating-three{
+    margin-left: 4rem;
+}
+.rating-text{
+    color: #511f50;
+    font-size: .75rem;
+    margin-left: 2rem;
+    font-weight: 900;
+}
+/*card*/
+.bottom{
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    
+}
+.card{
+    width: 360px;
+    height: 220px;
+    background-color: #511f50;
+    padding: 2rem;
+    
+    border-radius: 5px;
+}
+.card-two{
+    margin-top: 2rem;
+}
+.card-three{
+    margin-top: 4rem;
+}
+.avatar{
+    margin-bottom: 1.5rem;
+}
+
+.avatar-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: contain;
+    margin-right: 1rem;
+
+}
+
+.avatar-image-one{
+    background-image: url(./images/image-colton.jpg);
+}
+.avatar-image-two{
+    background-image: url(./images/image-irene.jpg);
+}
+.avatar-image-three{
+    background-image: url(./images/image-anne.jpg);
+}
+
+.avatar-details h3{
+    color: #fff;
+}
+.avatar-details h6{
+    color: #ac679b;
+}
+.card-details{
+    color: rgba(255, 255, 255, 0.671);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: -120%;
+    left: 50%;
+    transform: translate(-50%,-120%);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+@media screen and (max-width: 600px) {
+    .container{
+        text-align: center;
+        width: 95%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .top-left{
+        margin-bottom: 2rem;
+    }
+    .rating-star{
+        flex-direction: row;
+    }
+    .rating{
+        margin-left: 0;
+        padding: 1.5rem 6rem;
+    }
+    .card{
+        margin-top: .5rem;
+        height: 250px;
+    }
+    .bottom{
+        padding-bottom: 5rem;
+        text-align: left;
+    }
+    .avatar{
+        flex-direction: row;
+    }
+    .attribution {
+        position: absolute;
+        bottom: -120%;
+        left: 50%;
+        transform: translate(-50%,-120%);
+      }
+  }
